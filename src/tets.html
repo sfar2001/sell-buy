@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Product Page</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .fram1 {
+            position: relative;
+            width: 896px;
+            height: 1400px;
+            background: #FFFFFF;
+        }
+
+        .group7 {
+            position: absolute;
+            width: 680px;
+            height: 417px;
+            left: 88px;
+            top: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .img-L {
+            position: absolute;
+            width: 360px;
+            height: 417px;
+            left: 88px;
+            top: 60px;
+        }
+
+        .ellipse1 {
+            position: absolute;
+            width: 280px;
+            height: 256px;
+            left: 88px;
+            top: 93px;
+            border-radius: 100%;
+            background: #DE9191;
+        }
+
+        .shirt1 {
+            position: absolute;
+            width: 417px;
+            height: 520px;
+            left: 119px;
+            top: 60px;
+        }
+
+        .preBox-L {
+            position: absolute;
+            width: 148px;
+            height: 46px;
+            left: 440px;
+            top: 349px;
+        }
+
+        .Rectangle-1 {
+            position: absolute;
+            width: 148px;
+            height: 46px;
+            left: 440px;
+            top: 140px;
+            background: #D9D9D9;
+            border-radius: 21px;
+        }
+
+        .PR-order {
+            position: absolute;
+            width: 92px;
+            height: 25px;
+            left: 468px;
+            top: 151px;
+            font-family: 'Inter';
+            font-style: italic;
+            font-weight: 600;
+            font-size: 21px;
+            line-height: 25px;
+            text-align: center;
+            color: #000000;
+        }
+
+        .Discirption-L {
+            position: absolute;
+            width: 284px;
+            height: 157px;
+            left: 456px;
+            top: 126px;
+        }
+
+        .Discirption {
+            position: absolute;
+            width: 284px;
+            height: 157px;
+            left: 280px;
+            top: 100px;
+            font-family: 'Inter';
+            font-style: italic;
+            font-weight: 600;
+            font-size: 21px;
+            line-height: 25px;
+            color: #000000;
+        }
+
+        .buyBox-L {
+            position: absolute;
+            width: 148px;
+            height: 46px;
+            left: 620px;
+            top: 140px;
+        }
+
+        .Rectangle-2 {
+            position: absolute;
+            width: 148px;
+            height: 46px;
+            left: 60px;
+            top: 350px;
+            background: #D9D9D9;
+            border-radius: 21px;
+        }
+
+        .buy {
+            position: absolute;
+            width: 39px;
+            height: 25px;
+            left: 110px;
+            top: 359px;
+            font-family: 'Inter';
+            font-style: italic;
+            font-weight: 600;
+            font-size: 21px;
+            line-height: 25px;
+            text-align: center;
+            color: #000000;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .fram1 {
+                width: 100%;
+                height: auto;
+            }
+
+            .group7 {
+                flex-direction: column;
+                width: 100%;
+                height: auto;
+                left: 0;
+                top: 0;
+            }
+
+            .img-L,
+            .ellipse1,
+            .shirt1 {
+                position: static;
+                width: 100%;
+                height: auto;
+            }
+
+            .preBox-L,
+            .Discirption-L,
+            .buyBox-L {
+                position: static;
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .Rectangle-1,
+            .Rectangle-2 {
+                width: 100%;
+                left: 0;
+                top: 0;
+            }
+
+            .PR-order,
+            .Discirption,
+            .buy {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .ellipse1 {
+                width: 200px;
+                height: 200px;
+            }
+
+            .shirt1 {
+                width: 300px;
+                height: 400px;
+            }
+
+            .PR-order,
+            .Discirption,
+            .buy {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fram1">
+        <div class="group7">
+            <div class="img-L">
+                <div class="ellipse1"></div>
+                <img class="shirt1" src="shirt.jpg" alt="Shirt">
+            </div>
+            <div class="preBox-L">
+                <div class="Rectangle-1"></div>
+                <div class="PR-order">PR order</div>
+            </div>
+            <div class="Discirption-L">
+                <div class="Discirption">
+                    This is a description of the product. It can be quite long and detailed.
+                </div>
+            </div>
+            <div class="buyBox-L">
+                <div class="Rectangle-2"></div>
+                <div class="buy">Buy</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
